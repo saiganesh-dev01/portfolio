@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Necto Mono";
+  src: url("./assets/font/NectoMono-Regular.otf") format("opentype");
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior:smooth;
+}
+
+body {
+  background-color: #15202b;
+  color: #dad8d8;
+  font-family: "Necto Mono", monospace;
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+#root a{
+  text-decoration: none;
+  color: cadetblue;
+}
+
+#root a:hover{
+  text-decoration: underline;
+  color: lightblue;
+}

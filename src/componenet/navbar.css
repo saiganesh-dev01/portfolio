@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#navitems{
+    display: flex;
+    gap: 3rem;
+}
+.navitem{
+    text-decoration: none;
+    color: #dad8d8;
+}
+.navitem:hover{
+    color: lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
