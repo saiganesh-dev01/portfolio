@@ -1,0 +1,51 @@
+.contact a{
+	color: var(--primary);
+}
+.contact a:hover{
+	color: var(--primary-alt); 
+	text-decoration:underline;
+}
+.contact input{
+	background: var(--bgdim);
+	color: var(--text);
+	border: none;
+	padding: 0.5rem;
+}
+
+.contact input:focus{
+	outline: 1px var(--primary) solid;
+	background-color: var(--bggreen);
+	color: var(--primary-alt);
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#submit-btn{
+	padding: 0.5rem;
+	background-color: var(--primary);
+	color: var(--bgdim);
+	border: 2px var(--primary) solid;
+}
+
+#submit-btn:hover{
+	border: 2px var(--bg5) dashed;
+}
+.contact textarea{
+	background: var(--bgdim) center center no-repeat;
+	resize: none;
+	white-space: wrap;
+	overflow: auto;
+	color: var(--text);
+	border: none;
+	padding: 0.5rem;
+	width: 100%;
+}
+.contact textarea:focus{
+	outline: 1px var(--primary) solid;
+	background-color: var(--bggreen);
+	color: var(--primary-alt);
+}

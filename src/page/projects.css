@@ -1,0 +1,45 @@
+#projects{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.project{
+	padding: 1rem;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.project-cover{
+	max-width: 12rem;
+	max-height: 12rem;
+	display: block;
+	object-fit: cover;
+	filter: gray; /* IE6-9 */
+  	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  	filter: grayscale(1) blur(0.75px);
+	border-radius: 4px;
+	overflow: hidden;
+	transition: all 0.3s;
+}
+
+.project-cover:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.3s;
+}
+
+.project-info{
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+#status{
+	display: flex;
+	justify-content: space-between;
+}

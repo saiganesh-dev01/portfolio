@@ -1,0 +1,38 @@
+#footbar{
+	background-color: var(--bg2);
+	color: var(--text);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	border-top: 2px dashed var(--text);
+}
+
+#links{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0.25rem;
+	gap: 1rem;
+}
+
+.link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	font-size: 2rem;
+	line-height: 1;
+	transition: all 0.3s ease;
+	border: 2px dashed transparent;
+	text-decoration: none;
+}
+
+.link:hover {
+	background-color: var(--bg0);
+	cursor: pointer;
+	border: 2px dashed var(--text);
+}
+
+

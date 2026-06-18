@@ -1,0 +1,219 @@
+/* ========================================
+   Everforest Markdown
+   Minimal Article Theme
+======================================== */
+
+.markdown {
+    --fg: #D3C6AA;
+    --fg-muted: #9DA9A0;
+
+    --bg: #272E33;
+    --bg-soft: #2E383C;
+
+    --green: #A7C080;
+    --blue: #7FBBB3;
+    --yellow: #DBBC7F;
+    --red: #E67E80;
+    --purple: #D699B6;
+    --orange: #E69875;
+
+    --border: #374145;
+
+    max-width: 760px;
+
+    color: var(--fg);
+    background: var(--bg);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Typography */
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    color: var(--text);
+    line-height: 1.3;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.markdown h1 {
+    font-size: 2.6rem;
+}
+
+.markdown h2 {
+    font-size: 2rem;
+}
+
+.markdown h3 {
+    font-size: 1.55rem;
+}
+
+.markdown h4 {
+    font-size: 1.25rem;
+}
+
+.markdown p {
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+/* Links */
+
+.markdown a {
+    color: var(--blue);
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.markdown a:hover {
+    text-decoration: underline;
+}
+
+/* Bold / Italics */
+
+.markdown strong {
+    color: var(--green);
+    font-weight: 1000;
+}
+
+.markdown em {
+    color: var(--yellow);
+    font-style: italic;
+}
+
+/* Lists */
+
+.markdown ul,
+.markdown ol {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.markdown li {
+    margin: .45rem 0;
+}
+
+.markdown li::marker {
+    color: var(--green);
+}
+
+/* Quotes */
+
+.markdown blockquote {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+
+    border-left: 3px solid var(--green);
+
+    color: var(--fg-muted);
+}
+
+/* Rules */
+
+.markdown hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0;
+}
+
+/* Inline Code */
+
+.markdown code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: .92em;
+
+    color: var(--green);
+    background: var(--bg-soft);
+
+    padding: .15rem .4rem;
+    border-radius: 4px;
+}
+
+/* Code Blocks */
+
+.markdown pre {
+    overflow-x: auto;
+
+    padding: 1rem 1.25rem;
+    margin: 1.75rem 0;
+
+    background: var(--bg-soft);
+
+    border-radius: 6px;
+}
+
+.markdown pre code {
+    padding: 0;
+    background: transparent;
+    color: var(--fg);
+}
+
+/* Tables */
+
+.markdown table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.markdown th {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.markdown th,
+.markdown td {
+    padding: .75rem 0;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+/* Images */
+
+.markdown img {
+    display: block;
+    max-width: 100%;
+    margin: 2rem auto;
+    border-radius: 6px;
+}
+
+/* Selection */
+
+.markdown ::selection {
+    background: #384B55;
+}
+
+/* Scrollbar */
+
+.markdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.markdown::-webkit-scrollbar-thumb {
+    background: #495156;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .markdown {
+        padding: 2rem 1.2rem;
+        font-size: 17px;
+    }
+
+    .markdown h1 {
+        font-size: 2.1rem;
+    }
+
+    .markdown h2 {
+        font-size: 1.7rem;
+    }
+
+}
