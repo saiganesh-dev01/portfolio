@@ -16,6 +16,7 @@
 
 :root{
 	min-height: 100vh;
+    font-family: "JetBrainsMonoNL";
 }
 
 main {
@@ -86,6 +87,7 @@ table {
 	color: var(--text);
 }
 
-::-webkit-scrollbar{
-	
+@font-face {
+    font-family: "JetBrainsMonoNL";
+    src: url("src/assets/fonts/JetBrainsMonoNL-Regular.ttf");
 }
